@@ -1,0 +1,38 @@
+png_w 736
+png_h 460
+vs_field_px 55 69 434 342
+vs1_km 40 100 6 33
+vs2_km -2.5 50 0 24
+vs0_km 60 220 10 70
+vs_switch_km 45
+# E/W strip: spine x, top and bottom rows px, and the EOW-EN (m) they span
+vs_strip_px 636.6 92.0 377.2 -5000 7000
+# its label column x, the NOM and STN label rows, and the moving MEP label's
+# clearance from them, px
+vs_label_px 667.6 258.4 210.8 13.8
+hs_field_px 158 103 322 322
+hs1_km 0 0 70
+hs2_km -10 0 25
+hs3_km -8 0 11
+hs0_km 0 0 180
+hs-1_km 0 0 500
+hs_zoom_in 0.85
+# readout blocks: label x, value right-edge x, then one row per readout (centre,
+# px from the top) in the order of the names on the comment line above each
+# VERT SIT: SPD BK / CMD / NZ / TGT NZ / QBAR / QREF / MACH
+vs_readout_px 507.8 588.8 184.0 204.7 241.5 262.2 299.0 319.7 356.5
+# HORIZ SIT: RWY / HAC / EP / HAC TURN / RANGE / HDG ERR
+hs_readout_px 25.8 139.8 172.5 193.2 213.9 262.2 287.5 312.8
+# status row, both pages: phase x, ZOOM x, alert centre x, row centre y
+msg_row_px 55.2 147.2 456.3 52.9
+# VERT SIT A/L box: left x, top y, width, height
+al_box_px 371.7 368.0 51.5 27.6
+# HORIZ SIT top bar: left x, right x, bar y, numeral drop, end-label gap
+hs_bar_px 220.8 423.2 75.9 16.1 8.8
+# HORIZ SIT glide-slope scale: x, top y, bottom y, and the ft it spans each way
+hs_gsi_px 526.2 138.0 368.0 5000
+# the MET clock: right edge and baseline row, px from the top, drawn live by kOS
+clock_px 668.8 29.9
+# HORIZ SIT message log: left edge, first row (centre, px from the top), row
+# pitch px, rows; newest at the top, kOS writes the lines
+log_px 566.7 142.6 20.7 13

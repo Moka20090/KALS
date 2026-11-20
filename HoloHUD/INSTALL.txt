@@ -1,0 +1,71 @@
+HOLO HUD 1.0.0 - INSTALL
+========================
+
+Holo HUD is a head-up display for any aircraft in KSP, drawn by a kOS script.
+It only draws. It never flies your craft.
+
+
+WHAT YOU NEED
+  - KSP 1.12 (tested on 1.12.5) and kOS 1.6.0.1
+  - A kOS processor part on your craft
+  - Python 3 for the installer (python.org; tick "Add python.exe to PATH")
+
+  The kOS StockCamera addon 0.3.1 is included. The HUD CAM button needs it.
+
+
+INSTALL
+  1. Close KSP and unzip this file into a folder of its own.
+  2. Double-click INSTALL.bat. It finds your KSP folder and shows what it will copy.
+     Nothing is copied until you say yes.
+  3. Pick the HUD CAM's field of view: 40, 60 (the default) or 70 degrees.
+     A wider view shows more of the world and draws the HUD smaller.
+
+  The installer fits the HUD to your screen size. Any file it replaces is saved in
+  HoloHUD_backup in your KSP folder. To change the field of view later, run INSTALL.bat again.
+
+
+
+UNINSTALL
+  Double-click UNINSTALL.bat. It removes only what the installer added and puts back
+  any file it replaced.
+
+
+INSTALL BY HAND (without Python)
+  1. Copy the contents of the Install folder (GameData and Ships) into your KSP folder.
+  2. Make a file Ships\Script\display.txt with your screen size on one line, for example: 1920x1080
+
+  The zip comes with the HUD drawn for 3840x2160 at 60 degrees. For any other screen size
+  you need Python 3 to build it once. In Ships\Script, run:
+      python hud_build.py hud hud_<width>x<height> --screen <width>x<height> --fov 60
+
+
+FIRST FLIGHT
+  1. Load an aircraft with a kOS processor part and stay in the flight view (not IVA).
+  2. Open the kOS terminal and type:
+         SWITCH TO 0.
+         RUN hud.ks.
+  3. A small HUD window opens at the top left:
+         HUD ON / OFF     Shows or hides the HUD
+         HUD CAM          Puts the camera at the cockpit's eye, so the HUD lines up with the world
+         Eye buttons      Move the HUD CAM's eye forward / back, up / down, left / right
+         RESET            Puts the eye back where it started
+         QUIT             Closes the HUD and gives you the normal camera back
+     Eye moves are saved for each craft, so the next flight keeps them.
+
+
+IF SOMETHING GOES WRONG
+  - "No free camera" when you press HUD CAM: the StockCamera addon is missing.
+    Check that GameData\kOS-Addons\StockCamera is there.
+  - The HUD looks blurred or the wrong size: Ships\Script\display.txt must hold your
+    screen size. Fix it and run INSTALL.bat again.
+  - Anything else: send the error text, your screen size and your KSP.log with the report.
+
+
+NOT IN 1.0.0
+  No runway outline or guidance symbols. The HUD text is Arial.
+
+
+LICENCES
+  Holo HUD: MIT (GameData\HoloHUD\LICENSE).
+  kOS StockCamera: GPL-3, a separate program (GameData\kOS-Addons\StockCamera\LICENSE.md).
+  Its source code is in kOS-StockCamera-0.3.1-source.zip.

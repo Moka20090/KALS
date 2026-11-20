@@ -1,0 +1,17 @@
+HOLO HUD CHANGELOG
+
+1.0.0 (2026-11-20)
+  The first release: a head-up display for any aircraft.
+  - The HUD: boresight, velocity vector, horizon and pitch ladder, KEAS and altitude tapes (radar altitude below 5000 ft
+    from the wheels), the pilot throttle on the scale at the right, SAS / MAN. Always the full picture, on the ground
+    too (no declutter).
+  - HoloHud.dll (ADDONS:HOLO): the HUD's per-update maths in C#, with kOS's own update as the fallback.
+  - The HUD window: HUD ON / OFF, HUD CAM, QUIT, and the eye buttons (FWD / AFT, UP / DOWN, LEFT / RIGHT, STEP, RESET),
+    saved per craft in Ships\Script\hud_eye_cal_<craft name>.json.
+  - The installer (INSTALL.bat): finds KSP, checks kOS, three HUD CAM fields of view (40 / 60 / 70 deg), builds the
+    sprite sets for your screen at install, a progress bar, a backup of every file it replaces, --uninstall.
+  - kOS StockCamera 0.3.1 bundled (GPL-3, with its source) for HUD CAM's free camera.
+  - A destroyed wheel no longer stops the HUD (the gear is found again when the craft loses a part).
+
+Pre-releases (testing only): 1.0.0-pre1 (2026-11-11), 1.0.0-pre2 (2026-11-11, the installer + StockCamera),
+1.0.0-pre3 (2026-11-14, the eye buttons, the throttle scale, no declutter, the field of view choice).

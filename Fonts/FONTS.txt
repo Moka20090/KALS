@@ -1,0 +1,13 @@
+The KAL/S HUD fonts: squared stroke fonts drawn for this HUD (straight strokes, one line width, fixed pitch),
+like the real Space Shuttle HUD's lettering.
+  HUDStroke-Regular.ttf           "HUD Stroke"           the HUD's base font (stroke 106 / 1000 em)
+  HUDStrokeWide092-Regular.ttf    "HUD Stroke Wide 092"  the phase line        (29 px on a 3840 x 2160 screen)
+  HUDStrokeWide116-Regular.ttf    "HUD Stroke Wide 116"  the messages          (23 px)
+  HUDStrokeWide127-Regular.ttf    "HUD Stroke Wide 127"  the digits and CSS    (21 px)
+  HUDStrokeWide140-Regular.ttf    "HUD Stroke Wide 140"  the tapes and Nz      (19 px)
+  HUDStrokeWide148-Regular.ttf    "HUD Stroke Wide 148"  the pitch ladder      (18 px)
+Each Wide font has the stroke that draws the same line width at its size. The HUD picks the one for each text slot.
+
+Install: select all six, right-click, "Install for all users" (Windows 11: under "Show more options"; it needs an
+administrator), then restart KSP. kOS draws only fonts installed in Windows; without these the HUD text is in Arial.
+Remove: Windows Settings > Personalization > Fonts, pick each one, Uninstall.

@@ -1,0 +1,20 @@
+kOS StockCamera 0.3.1 -- bundled with Holo HUD 1.0.0 (THIS FOLDER IS NOT PART OF HOLO HUD)
+================================================================================================
+
+What it is   The kOS addon that adds ADDONS:CAMERA to kOS, including FREECAMERA (full-pose camera control), which Holo HUD's
+             HUD CAM button uses. CKAN carries only v0.2 (no FREECAMERA); 0.3.0 / 0.3.1 exist only as unreleased source
+             upstream, so this is a build of that source.
+Author       the kOS StockCamera contributors (KSP-KOS organisation).
+Upstream     https://github.com/KSP-KOS/KOS-StockCamera , branch master, commit 45d75aa7c4160bb5f9ad07183853b3b8a1c9a3b5
+             (2026-05-11, "Freecamera adjustments and new camera light (#9)"), the CHANGELOG's "v0.3.1 unreleased".
+Licence      GNU General Public License v3 (LICENSE.md in this folder). It is a separate program from Holo HUD: Holo HUD
+             (MIT) only talks to it through kOS's script language (ADDONS:CAMERA:FREECAMERA), and the two are shipped
+             together as a collection (an aggregate), not combined into one program.
+Build        kOS.AddOns.StockCamera.dll, 59,392 bytes, built 2026-09-26 with the .NET SDK 8.0.425 against KSP 1.12.5 and
+             kOS 1.6.0.1 from the commit above, UNMODIFIED except the label in KOS-StockCamera.version (0.3.1.0).
+             SHA256 67F7CF0F8B1C139A2316EA93995423604C1D25AC74BA98F9D5AD3073638752F7
+Source       The complete corresponding source of this build (the C# files, the project file, LICENSE, README, CHANGELOG
+             and the build script) is in kOS-StockCamera-0.3.1-source.zip in the root of the Holo HUD zip, and at the
+             upstream address above. Rebuild: the project needs the .NET SDK 8.x and a KSP + kOS install to compile against.
+Undo         Delete GameData\kOS-Addons\StockCamera (or run INSTALL.bat --uninstall). If you had CKAN's v0.2 before, the
+             installer kept it in HoloHUD_backup.

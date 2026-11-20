@@ -1,0 +1,27 @@
+version 2
+written 1793475047.866
+aero_ver 7.1
+v_init 3597.53
+v_taem 762.00
+png_w 736
+png_h 460
+# the plot field inside the PNG, pixels, MARGIN:V measured from the top
+field_px 153.2 78.2 568.5 338.3
+# the band is drawn this many px inside the field's top and bottom
+v_pad_px 20.0
+# per panel: n  vhi  vlo  x0_km  x1_km  arrest_v  png  aLo aHi  dLo dHi
+P 1 3597.53 2736.17 92.390 1847.795 3251.44 tal/traj1.png 25 50 0 100
+P 2 2736.17 2395.63 102.943 849.982 3251.44 tal/traj2.png 25 50 0 100
+P 3 2395.63 2000.00 101.827 592.188 3251.44 tal/traj3.png 25 50 0 100
+P 4 2000.00 1333.12 72.911 323.035 3251.44 tal/traj4.png 25 50 0 100
+P 5 1333.12 762.00 1.068 115.582 3251.44 tal/traj5_a10-35.png 10 35 0 100
+# readout value rows, pixels from the top, and the right edge to align to
+tl_rows 71.3 92.0 112.8 133.5 154.2
+tl_right 246.7
+br_rows 298.7 314.6 330.4 346.3 362.2 378.1 394.0 409.8 425.7
+br_right 712.8
+# the MET clock: right edge and baseline row, drawn live by kOS
+clock_px 666.4 29.9
+# the two strip scales: x centre, and the pixel row of the scale ends
+strip_a 63.3 66.7 420.9
+strip_d 116.3 66.7 420.9

@@ -1,0 +1,35 @@
+# THE DEORBIT PLANNER'S PROGRESS PAGES (gen_prog_bg.py; lib/prog_display.ks reads this). px at 736x460.
+version 2
+kind prog
+scale 0.667
+stamp 0d5b26
+plan_png prog_plan_0d5b26.png
+coarse_png prog_coarse_0d5b26.png
+log_png prog_log_0d5b26.png
+png_w 736
+png_h 460
+bar_px 73.6 662.7 66.7
+plan_ticks 0.0000 0.1389 0.3056 0.8611 1.0000
+coarse_ticks 0.0000 0.1500 1.0000
+plan_lrows 177.2 208.5 239.8 271.1
+plan_lval_px 243.0
+coarse_lrows 177.2 208.5 239.8 271.1 302.4 333.7
+coarse_note 73.6 365.0
+list_rows 177.2 208.5 239.8 271.1 302.4 333.7 365.0 396.3
+list_status 300.0 427.6 412.7
+plan_cols 312.0 1 40.0 365.0 1 45.0 385.0 0 80.0 470.0 0 125.0 600.0 0 118.0
+coarse_cols 330.0 1 50.0 350.0 0 80.0 515.0 1 70.0 605.0 1 70.0 625.0 0 95.0
+log_h 240
+log_top 38.0
+log_rows 9
+log_row_px 20.5
+log_x 22.0
+fam_png prog_fam_6aef65.png
+fam_ticks 0.0000 0.1640 0.2339 0.3770 0.4782 0.6387 0.7225 0.8813 1.0000
+fam_work 94 40 82 58 92 48 91 68
+fam_order 0 7 3 5 1 6 2 4
+fam_banks 0 12 24 36 48 60 72 85
+fam_lrows 177.2 208.5 239.8 271.1 302.4
+fam_rrows 177.2 208.5 239.8 271.1 302.4 333.7 365.0 396.3
+fam_lval_px 243.0
+fam_rval_px 662.7
