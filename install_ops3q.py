@@ -521,8 +521,11 @@ def has(gd, pat):
 def ksp_running():
     if os.name != 'nt':
         return False
-    out = subprocess.run(['tasklist', '/FI', 'IMAGENAME eq KSP_x64.exe'], capture_output=True, text=True).stdout
-    return 'KSP_x64.exe' in out
+    # Read tasklist's output as bytes, not text: it prints in the console's code page (cp866 on Russian Windows,
+    # cp850 / cp437 elsewhere), which Python 3.15 no longer decodes by default (UTF-8 mode), so text=True crashed
+    # the installer on non-English Windows. The image name is plain ASCII in every code page.
+    out = subprocess.run(['tasklist', '/FI', 'IMAGENAME eq KSP_x64.exe'], capture_output=True).stdout or b''
+    return b'ksp_x64.exe' in out.lower()
 
 
 def near(d=HERE):
